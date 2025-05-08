@@ -44,14 +44,14 @@ The goal of training is to minimize this loss function, which should lead to bet
 
 ## Contents of This Repository
 
-- **loss.ipynb/loss.md**: Details about loss functions and their applications
-- **active_functions.ipynb**: Exploration of activation functions
-- **packprop.ipynb**: Backpropagation algorithms and implementation details
+- [**loss.md**](loss.md)/[**loss.ipynb**](loss.ipynb): Details about loss functions and their applications
+- [**active_functions.ipynb**](active_functions.ipynb): Exploration of activation functions
+- [**packprop.ipynb**](packprop.ipynb): Backpropagation algorithms and implementation details
+- [**optimizers.md**](optimizers.md)/[**optimizers.ipynb**](optimizers.ipynb): Overview of optimization algorithms for neural networks
 
 ## Future Topics
 
 This repository will continue to grow with additional topics including:
-- Optimization algorithms
 - Regularization techniques
 - Model architectures
 - Practical implementation tips
