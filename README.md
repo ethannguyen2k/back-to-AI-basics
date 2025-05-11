@@ -48,14 +48,15 @@ The goal of training is to minimize this loss function, which should lead to bet
 - [**active_functions.ipynb**](active_functions.ipynb): Exploration of activation functions
 - [**packprop.ipynb**](packprop.ipynb): Backpropagation algorithms and implementation details
 - [**optimizers.md**](optimizers.md)/[**optimizers.ipynb**](optimizers.ipynb): Overview of optimization algorithms for neural networks
+- [**regularization.md**](regularization.md): Guide to regularization techniques in both traditional machine learning and deep learning
 
 ## Future Topics
 
 This repository will continue to grow with additional topics including:
-- Regularization techniques
 - Model architectures
 - Practical implementation tips
 - Hyperparameter tuning
+- Transfer learning
 - And more...
 
 Feel free to explore the notebooks for detailed examples and implementations of these concepts.
