@@ -1,0 +1,35 @@
+# Ignore all text files
+*.txt
+
+models/data/MNIST/raw/*
+
+# Exceptions - if you have any specific txt files you want to track
+# !important.txt
+
+# Common files to ignore
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+.history/

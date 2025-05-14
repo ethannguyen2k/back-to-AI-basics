@@ -4,7 +4,7 @@ This repository serves as a refresher guide for fundamental AI and neural networ
 
 ## Neural Network Fundamentals
 
-All neural nets, no matter how fancy — are just clever stacks of dot products + non-linearities + parameter updates.
+All neural nets, no matter how fancy — are just clever stacks of [dot products](#the-basic-building-block-a-neuron) + [non-linearities](active_functions.ipynb) + [parameter updates](#the-training-process).
 
 ### The Basic Building Block: A Neuron
 
@@ -17,13 +17,13 @@ output = activation(w · x + b)
 Where:
 - `w · x` is a dot product between weights and input features
 - `b` is a bias
-- `activation()` is a non-linear function (like ReLU, sigmoid, tanh, etc.)
+- `activation()` is a non-linear function (like [ReLU, sigmoid, tanh](active_functions.ipynb), etc.)
 
 ### Scaling Up Neural Networks
 
 - A layer does multiple dot products in parallel (matrix-vector or matrix-matrix multiplication).
 - A deep neural network stacks these layers.
-- Training adjusts the weights using gradients (derived from the chain rule—again, involving dot products in backprop).
+- Training adjusts the weights using gradients (derived from the chain rule—again, involving dot products in [backpropagation](packprop.ipynb)).
 
 ### Neural Network Variants
 
@@ -36,11 +36,11 @@ Where:
 ## The Training Process
 
 1. **Forward pass**: Input data passes through the model to produce predictions
-2. **Loss calculation**: Compare predictions to actual targets using a loss function
-3. **Backpropagation**: Calculate gradients of the loss with respect to model parameters
-4. **Parameter update**: Adjust weights and biases to minimize the loss
+2. **Loss calculation**: Compare predictions to actual targets using a [loss function](loss.md)
+3. **Backpropagation**: Calculate gradients of the loss with respect to model parameters using [backpropagation](packprop.ipynb)
+4. **Parameter update**: Adjust weights and biases to minimize the loss using [optimizers](optimizers.md)
 
-The goal of training is to minimize this loss function, which should lead to better predictions. And the ultimate goal is generalization, not just minimizing training loss.
+The goal of training is to minimize this loss function, which should lead to better predictions. And the ultimate goal is generalization, not just minimizing training loss, which can be achieved through proper [regularization](regularization.md).
 
 ## Contents of This Repository
 
@@ -49,6 +49,7 @@ The goal of training is to minimize this loss function, which should lead to bet
 - [**packprop.ipynb**](packprop.ipynb): Backpropagation algorithms and implementation details
 - [**optimizers.md**](optimizers.md)/[**optimizers.ipynb**](optimizers.ipynb): Overview of optimization algorithms for neural networks
 - [**regularization.md**](regularization.md): Guide to regularization techniques in both traditional machine learning and deep learning
+- [**models/mlp_minst.ipynb**](models/mlp_minst.ipynb): Implementation of Multi-Layer Perceptron for MNIST digit classification
 
 ## Future Topics
 
